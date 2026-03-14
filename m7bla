@@ -1,0 +1,6 @@
+#!/bin/bash
+# m7bla launcher — Milkyway Intelligence
+SCRIPT_DIR="$(cd "$(dirname "$(readlink -f "$0")")" && pwd)"
+export PYTHONPATH="$SCRIPT_DIR:$PYTHONPATH"
+cd "$SCRIPT_DIR"
+python3 "$SCRIPT_DIR/cli/main.py" "$@"
